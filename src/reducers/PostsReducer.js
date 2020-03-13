@@ -1,8 +1,8 @@
 import {getPostsActionType} from "../actions";
 
-export default (posts = null, action) => {
+export default (state = null, action) => {
     if (action.type === getPostsActionType) {
         return action.payload;
     }
-    return posts;
+    return state;
 };

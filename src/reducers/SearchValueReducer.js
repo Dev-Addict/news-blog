@@ -1,8 +1,8 @@
 import {updateSearchValueActionType} from "../actions";
 
-export default (searchValue = '', action) => {
+export default (state = '', action) => {
     if (action.type === updateSearchValueActionType) {
         return action.payload;
     }
-    return searchValue;
+    return state;
 };

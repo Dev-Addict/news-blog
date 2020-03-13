@@ -10,7 +10,7 @@ class PostList extends Component {
         if (this.props.viewState === viewState.READY) {
             return this.props.posts.map(post => {
                 return <Post title={post.title} imageURL={post.urlToImage} description={post.description}
-                             url={post.url} author={post.author} source={post.source.name}/>
+                             url={post.url} author={post.author} source={post.source.name} key={post.url}/>
             });
         } else if (this.props.viewState === viewState.LOADING) {
             return (

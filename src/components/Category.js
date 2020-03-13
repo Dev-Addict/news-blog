@@ -18,7 +18,8 @@ class Category extends Component {
                                 onClick={event => {
                                     this.props.setCategory(category);
                                     this.props.getPosts(this.props.searchValue, this.props.postsType, category)
-                                }}>
+                                }}
+                                key={category}>
                                 {category}
                             </div>
                         );
