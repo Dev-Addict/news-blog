@@ -5,6 +5,7 @@ export const getPostsActionType = 'GET_POSTS';
 export const setBlogViewStateActionType = 'SET_BLOG_VIEW_STATE';
 export const setPostsTypeActionType = 'SET_POSTS_TYPE';
 export const setCategoryActionType = 'SET_CATEGORY';
+export const setNoticeVisibilityActionType = 'SET_NOTICE_VISIBILITY';
 
 export const updateSearchValue = searchValue => {
     return {
@@ -53,5 +54,12 @@ export const setCategory = category => {
     return {
         type: setCategoryActionType,
         payload: category
+    };
+};
+
+export const setNoticeVisibility = isVisible => {
+    return {
+        type: setNoticeVisibilityActionType,
+        payload: isVisible
     };
 };

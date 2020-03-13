@@ -1,0 +1,27 @@
+.notice-container {
+    background-color: #fdcb6e !important;
+    position: absolute !important;
+    top: 10px !important;
+    left: 10px !important;
+    display: inline;
+    transition: all;
+    transition-duration: 1000ms;
+    cursor: default;
+    color: #2d3436;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.notice-message {
+    display: inline-block;
+}
+
+.notice-close {
+    display: inline-block;
+    padding-left: 10px;
+
+}
+
+.notice-hidden {
+    opacity: 0;
+}

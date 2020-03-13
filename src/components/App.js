@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 
 import SearchBar from "./SearchBar";
 import PostList from "./PostList";
+import Notice from "./Notice";
 
 class App extends Component {
 
@@ -10,6 +11,7 @@ class App extends Component {
             <div>
                 <SearchBar/>
                 <PostList/>
+                <Notice/>
             </div>
         );
     }

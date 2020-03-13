@@ -3,7 +3,7 @@ import { combineReducers } from 'redux';
 import {
     updateSearchValueActionType, getPostsActionType,
     setBlogViewStateActionType, setPostsTypeActionType,
-    setCategoryActionType
+    setCategoryActionType, setNoticeVisibilityActionType
 } from '../actions';
 
 import {categories} from "../model";
@@ -44,10 +44,18 @@ const categoryReducer = (category = categories.all, action) => {
     return category;
 };
 
+const noticeVisibilityReducer = (isVisible = true, action) => {
+    if (action.type === setNoticeVisibilityActionType) {
+        return action.payload;
+    }
+    return isVisible;
+};
+
 export default combineReducers({
     searchValue: searchValueReducer,
     posts: postsReducer,
     viewState: viewStateReducer,
     postsType: postsTypeReducer,
-    category: categoryReducer
+    category: categoryReducer,
+    noticeVisibility: noticeVisibilityReducer
 });
