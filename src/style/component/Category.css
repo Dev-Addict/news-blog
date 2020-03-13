@@ -1,0 +1,36 @@
+.category-container {
+    margin-top: 20px;
+}
+
+.category-category {
+    display: inline;
+    margin: 10px;
+    padding: 10px;
+    transition: all;
+    transition-duration: 500ms;
+}
+
+.category-category-selected {
+    cursor: default;
+    color: #2d3436;
+    background-color: #0984e3;
+    border-radius: 5px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border: solid #0984e3 2px;
+}
+
+.category-category-not-selected {
+    cursor: pointer;
+    background-color: #2d3436;
+    color: #0984e3;
+    border-radius: 5px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border: solid #0984e3 2px;
+}
+
+.category-category-not-selected:hover {
+    background-color: #0984e3;
+    color: #2d3436;
+}

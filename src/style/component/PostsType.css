@@ -1,0 +1,33 @@
+.posts-type-container {
+    border: solid 2px #0984e3;
+    display: inline;
+    padding-top: 12px;
+    padding-bottom: 10px;
+}
+
+.posts-type-type {
+    display: inline-block;
+    width: 25%;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    transition: all;
+    transition-duration: 500ms;
+}
+
+.posts-type-type-selected {
+    color: #2d3436;
+    background-color: #0984e3;
+    cursor: default;
+}
+
+.posts-type-type-not-selected {
+    color: #0984e3;
+    cursor: pointer;
+}
+
+.posts-type-type-not-selected:hover {
+    color: #2d3436;
+    background-color: #0984e3;
+}
